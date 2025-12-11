@@ -42,7 +42,7 @@ import es.fpsumma.dam2.utilidades.ui.viewmodel.TareasViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun ListadoTareasScreen(navController: NavController, vm: TareasViewModel, modifier: Modifier= Modifier) {
+fun ListadoTareasScreen(navController: NavController, vm: TareasViewModel, modifier: Modifier = Modifier) {
 
     val tareas by vm.tareas.collectAsState()
 

@@ -6,21 +6,21 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "asignaturas")
-data class asignaturas(
+data class Asignatura(
 
     @PrimaryKey (autoGenerate = true)
     val id: Int = 0,
 
 
-    @ColumnInfo(name = "asignatuara")
-    val asignatura: String,
+    @ColumnInfo(name = "nombre")
+    val nombre: String,
 
 
      @ColumnInfo(name = "descripcion")
      val descripcion: String,
 
     @ColumnInfo(name = "nota", defaultValue = "1")
-    val nota: Int = 1,
+    val nota: Double = 1.0,
 
     @ColumnInfo(name = "categoria")
     val categoria: String? = null
